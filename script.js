@@ -190,3 +190,16 @@ console.log(friends);
 const popped = friends.pop(); //the .pop() method will return a value of the element being removed from the array. 
 console.log(friends);
 
+friends.shift(); //.shift() will remove the first element in the array and return the value of that element being removed. 
+console.log(friends);
+
+console.log(friends.indexOf('Steven')); //returns the index position of the element
+console.log(friends.indexOf('Bob')); //does not exist, returns -1
+
+console.log(friends.includes('Steven'));
+console.log(friends.includes('Bob'));
+// uses strict equality meaning it does not do type coresion (whether it is a string or integer matters when using .includes!!!)
+
+if (friends.indluces('Steven')){
+  console.log('You have a friends called steven');
+};
