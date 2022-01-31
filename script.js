@@ -174,3 +174,19 @@ console.log(age1, age2, age3);
 const ages = [calcAge(years[0]), calcAge(years[1]), calcAge(years[years.length-1])];
 console.log(ages);
 */
+
+//Array methods!!!
+
+const friends = ['Jonas', 'Steven', 'Peter'];
+
+// friends.push('Jay'); // .push adds elements to the end of an array
+const newLength = friends.push('Jay'); //.push does return a value, the length of the new array, but it's typically not used, but if needed, the result of the push function is the new length of the array. 
+console.log(newLength);
+
+friends.unshift('John'); //.unshif adds elements to the beginning of an array, this alos returns the value of the new array. 
+console.log(friends);
+
+//friends.pop(); //.pop() will remove the last element of the array
+const popped = friends.pop(); //the .pop() method will return a value of the element being removed from the array. 
+console.log(friends);
+
